@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+
+<html>  
+    <head>
+        <meta charset="UTF-8">    
+        <title>Simulation de l'impôt</title>  
+
+        <link rel="stylesheet" type="text/css" href="../../We give the 99 percents/jquery-ui-1.10.4/themes/base/jquery-ui.css"/>        
+        <script type="text/javascript" src="../../We give the 99 percents/Simulation impot/jquery.js"></script>
+        <script type="text/javascript" src="../../We give the 99 percents/Simulation impot/jquery-ui.js">    </script> 
+        <script type="text/javascript" src="../../We give the 99 percents/Simulation impot/jquery.svg.js"></script>
+        <script type="text/javascript" src="../../We give the 99 percents/Simulation impot/jquery.svgdom.js"></script> 
+<!--
+        <link rel="stylesheet" type="text/css" href="jquery-ui-1.10.4/themes/base/jquery-ui.css"/>        
+        <script type="text/javascript" src="Simulation impot/jquery.js"></script>
+        <script type="text/javascript" src="Simulation impot/jquery-ui.js">    </script> 
+        <script type="text/javascript" src="Simulation impot/jquery.svg.js"></script>
+        <script type="text/javascript" src="Simulation impot/jquery.svgdom.js"></script>
+-->
+        <script src="../dhtmlxSlider_v50_std/codebase/dhtmlxslider.js"></script>
+        <link rel="STYLESHEET" type="text/css" href="../dhtmlxSlider_v50_std/sources/dhtmlxSlider/codebase/skins/dhtmlxslider_dhx_skyblue.css">
+        <script src="http://d3js.org/d3.v3.min.js"></script>  <!-- http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js -->
+
+        <script type="text/javascript" src="simulateur_depenses.js"></script> <!-- algo_av&des moy_actuel_utilitarien nivvie  -->
+        <!--<script type="text/javascript" src="d3_test.js"></script>-->
+
+<style>
+body {
+    font-family: arial;
+    font-size: 1.1em;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+</style>
+       
+    </head>  
+    <body> 
+        <span id="out"></span><span id="tr"></span> <!-- github.com/bixiou/mes_depenses_publiques -->
+    <div style="width:1100px">
+        <div style="display:inline-block; width=250px; vertical-align:top;">
+            <br><span style="line-height:1.7em">Dépenses publiques</span><br>
+            <span style="float:right">Actuelles</span><br><br>
+            <span style="float:right">Souhaitées</span>
+        </div>
+        <div id="figure" style="display:inline-block; width=800px;"></div>
+        <div style="display:inline-block; width=50px; vertical-align:top;"><br><span style="line-height:1.7em">Mds&nbsp;€</span></div>
+    </div>
+    <div id="Text_deficit" style="left:700px; position:relative; vertical-align:top; float:left;"><span style="color:green">Équilibre</span><span style="color:red">&emsp;3% de déficit</span></div>
+    <form><br><input type="checkbox" id="Fixed_total"> Bloquer la dépense totale au montant désiré</form><br>
+    <div id="Slider_recette"  style="line-height:1.8em; display:inline; vertical-align:top"></div>
+    <div style="display:inline"><span id="Slider_recette_text">&emsp;Recettes  </span>
+    <span id="Slider_recette_variation"style="font-weight: bold;">0%     </span> 
+    <span id="Slider_recette_amount"></span>&nbsp;milliards d'euros (Mds&nbsp;€)</div><br>
+    <div id="Slider_total"></div>
+    <span id="Slider_total_text">&emsp;Dépense totale    </span>
+    <span id="Slider_total_variation"style="font-weight: bold;">0%     </span> 
+    <span id="Slider_total_amount"></span>&nbsp;Mds&nbsp;€<br><br>
+    <div id="Sliders">
+    <input type="button" name="Enregistrer" id="enregistrer" value="Enregistrer ma proposition !">
+        </div>
+    </body>
+</html>

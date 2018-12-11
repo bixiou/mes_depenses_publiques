@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+
+<html>  
+    <head>
+        <meta charset="UTF-8">    
+        <title>Simulation de l'impôt</title>  
+
+        <!--<link rel="stylesheet" type="text/css" href="http://www.jchartfx.com/libs/jQueryUI/Themes/cupertino/jquery-ui-1.8.21.custom.css"/>-->
+
+        <link rel="stylesheet" type="text/css" href="../../We give the 99 percents/jquery-ui-1.10.4/themes/base/jquery-ui.css"/>
+        
+        <script type="text/javascript" src="../../We give the 99 percents/Simulation impot/jquery.js"></script>
+        <script type="text/javascript" src="../../We give the 99 percents/Simulation impot/jquery-ui.js">    </script> 
+        <!--       
+        <script type="text/javascript" src="../../We give the 99 percents/jchartfx.7.1.5044/js/jchartfx.system.js">    </script>
+        <script type="text/javascript" src="../../We give the 99 percents/jchartfx.7.1.5044/js/jchartfx.coreVector.js">     </script>
+        <script type="text/javascript" src="../../We give the 99 percents/jchartfx.7.1.5044/js/jchartfx.advanced.js">    </script>
+        <script type="text/javascript" src="../../We give the 99 percents/jchartfx.7.1.5044/js/jchartfx.ui.js">    </script>
+        <script type="text/javascript" src="../../We give the 99 percents/jchartfx.7.1.5044/js/jchartfx.data.js">    </script>
+    -->
+        <script type="text/javascript" src="../../We give the 99 percents/Simulation impot/jquery.svg.js"></script>
+        <script type="text/javascript" src="../../We give the 99 percents/Simulation impot/jquery.svgdom.js"></script>
+
+       <!-- <script> window.dhx_globalImgPath = "./imgs/";</script>
+        <script  src="../We give the 99 percents/dhtmlxSlider/codebase/dhtmlxcommon.js"></script>
+        <script  src="../We give the 99 percents/dhtmlxSlider/codebase/dhtmlxslider.js"></script>
+        <script  src="../We give the 99 percents/dhtmlxSlider/codebase/ext/dhtmlxslider_start.js"></script>
+        <link rel="STYLESHEET" type="text/css" href="../We give the 99 percents/dhtmlxSlider/codebase/dhtmlxslider.css"> -->
+        <script src="../dhtmlxSlider_v50_std/codebase/dhtmlxslider.js"></script>
+        <link rel="STYLESHEET" type="text/css" href="../dhtmlxSlider_v50_std/sources/dhtmlxSlider/codebase/skins/dhtmlxslider_dhx_skyblue.css">
+
+        <script type="text/javascript" src="simulateur_depenses_stable.js"></script> <!-- algo_av&des moy_actuel_utilitarien nivvie  -->
+
+<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js"></script>         -->
+    </head>  
+    <body> 
+        <span id="out"></span><span id="tr"></span>
+            <form><input type="checkbox" id="Fixed_total">Verouiller la dépense totale au montant désiré</form><br><br>
+            <div id="Slider_total"></div>
+            <span id="Slider_total_text">&emsp;Dépense totale    </span>
+            <span id="Slider_total_variation">0%     </span> 
+            <span id="Slider_total_amount"></span>  <br><br><br><br>
+        <div id="Sliders">
+
+        </div>
+<!-- <div id="figure" style="margin-bottom: 50px;"></div> -->
+<!-- <script type="text/javascript" src="d3_test.js"></script> -->
+    </body>
+</html>
